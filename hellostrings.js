@@ -45,31 +45,55 @@ console.log(upperCase('Chopper'));
 console.log(upperCase('Tony Tony'));
 
  // Return the string length
-
- function length(str = '') {
-   let i = 0
-
-   for (let i in str) {
-     i = i + 1
-   }
-   return i
- }
-
- // const length = (string = '') => {
- //     let result = 0;
- //     for(let i in string)
- //         result++;
- //     return result;
+ // function length(str = '') {
+ //   let i = 0
+ //
+ //   for (let i in str) {
+ //     i = i + 1
+ //   }
+ //   return i
  // }
+
+ const length = (string = '') => {
+     let result = 0;
+     for(let i in string)
+         result++;
+     return result;
+ }
 
 console.log(length('Chopper'));
 
 // Converts the first character to upper case
 function capitalize (str = '', restToLower = false) {
-  return str.charAt(0).toUpperCase() + str.slice(1)
+  const firstChar = str.chartAt(0).toUpperCase();
+  console.log(firstChar)
+
+  // for (let i = 1; i < str.length ; i++) {
+  //   const charCode =
+  //   if (restToLower === true) {
+  //     result[i] = charCode - 32
+  //   } else {
+  //     result[i] = charCode
+  //   }
+  //
+  //   result[i] = String.fromCharCode(result[i])
+  // }
+  //
+  // return result.join('')
 }
 
-console.log(capitalize('woonan'));
+
+  // const firstChar = str[0]
+  // if (firstChar >= 97 && firstChar <= 122) {
+  //   result[i] = firstChar - 32
+  // } else {
+  //   result[i] = firstChar
+  // }
+  // result[i] = str.fromCharCode(result[i])
+  // return result.join('')
+
+
+console.log(capitalize('chopper'));
 
 // Converts the first character of subject to lower case
 function decapitalize (str = '') {
@@ -115,3 +139,4 @@ function swapCase (str = '') {
 
 console.log(swapCase('One Code'));
 console.log(swapCase('1337 Fruits'));
+// de.sousa.dylan@outlook.fr
